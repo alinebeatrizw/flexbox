@@ -1,5 +1,5 @@
 :root{
-    --linear-colorido:linear-gradient(45deg, #00142c, #09BEF2);
+    --linear-colorido: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     --linear-cinza: linear-gradient( to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
     --cor-texto-main: #00142c;
 }
@@ -92,7 +92,7 @@ h3{
 .link{
     flex: 2;
     display: flex;
-    flex-direction: column;
+
     padding: 20px;
     align-items: center;
     cursor: pointer;
@@ -137,17 +137,20 @@ h3{
 }
 
 .card{
+    height: 95px;
     display: flex;
     background: var(--linear-cinza);
     border-radius: 16px;
-    padding: 2rem;
+    padding: 7px;
     margin: 20px 0;
     box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
     justify-content: space-between;
 }
 .card img{
-    width: 100px;
+    width: 65px;
     border-radius: 10px;
+    height: 52px;
+    margin: 15px;
 }
 .porcentagem{
     align-self: center;
@@ -190,12 +193,14 @@ h3{
     left: 60%;
   }
   
-  .barra-progresso.p80::after {
-    left: 80%;
+  .barra-progresso.p90::after {
+    left: 90%;
   }
   
-  .barra-progresso.p100::after {
-    left: 100%;
+  .barra-progresso.p50::after {
+    left: 50%;
   }
- 
+  .barra-progresso.p75::after {
+    left: 75%;
+  }
   
