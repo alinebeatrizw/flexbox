@@ -1,0 +1,35 @@
+:root{
+    --linear-colorido:linear-gradient(45deg, #00142c, #09BEF2);
+    --linar-cinza:linear-gradient(to right bottom, rgba(255,255,255, 0.7, 255,255,255, 0.3 ) );
+    --cor-texto-main: #00142c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--linear-colorido);
+}
+
+
+/**TEXTOS**/
+
+h1{
+    color: var(--cor-texto-main);
+    font-weight: 600;
+    font-size: 3rem;
+    opacity: 0.8;
+}
+
+h2, p{
+    color: var(--cor-texto-main);
+    font-weight: 500;
+}
