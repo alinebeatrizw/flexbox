@@ -1,6 +1,6 @@
 :root{
     --linear-colorido:linear-gradient(45deg, #00142c, #09BEF2);
-    --linar-cinza:linear-gradient(to right bottom, rgba(255,255,255, 0.7, 255,255,255, 0.3 ) );
+    --linear-cinza: linear-gradient( to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
     --cor-texto-main: #00142c;
 }
 
@@ -32,4 +32,53 @@ h1{
 h2, p{
     color: var(--cor-texto-main);
     font-weight: 500;
+    opacity: 0.8;
+}
+
+h3{
+    color: var(--cor-texto-main);
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/**CIRCULOS**/
+.circulo1, .circulo2{
+    background: var(--linear-cinza);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    position: absolute;
+}
+.circulo1{
+    top: 5%;
+    left: 10%;
+}
+.circulo2{
+    bottom: 5%;
+    right: 10%;
+}
+/**TODO**/
+
+.todo{
+    background: var(--linear-cinza);
+    height:80vh ;
+    width: 70%;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+}
+
+/**painel-menu***/
+
+.painel-menu{
+    flex: 1;
+}
+
+/**games**/
+
+.game{
+    flex: 2;
 }
