@@ -61,7 +61,7 @@ h3{
 
 .todo{
     background: var(--linear-cinza);
-    height:80vh ;
+    min-height:80vh ;
     width: 70%;
     border-radius: 30px;
     margin: 20px;
@@ -75,10 +75,127 @@ h3{
 
 .painel-menu{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: var(--linear-cinza);
+    border-radius: 2rem;
+    padding: 20px;
+}
+.eu img{
+    width: 100px;
+    border-radius: 5%;
+
+}
+.link{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.link h2{
+    padding: 0 2rem;
+}
+.link img{
+    width: 40px;
+}
+.pro-secao{
+    background: var(--linear-colorido);
+    border-radius: 30px;
+    color: white;
+    padding: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pro-secao img{
+    width: 90px;
+    transform: rotate(45deg );
+}
+.pro-secao h2{
+    width: 40%;
+    color: white;
+    font: 600;
 }
 
 /**games**/
 
 .game{
     flex: 2;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
 }
+.status h1{
+    font-size: 40px;
+}
+
+.card{
+    display: flex;
+    background: var(--linear-cinza);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 20px 0;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+}
+.card img{
+    width: 100px;
+    border-radius: 10px;
+}
+.porcentagem{
+    align-self: center;
+    font-weight: bold;
+    color: var(--cor-texto-main);
+}
+.card-info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.card-info .titulo h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.card-info .titulo p{
+    font-size: 16px;
+    font-weight: 400;
+}
+.barra-progresso{
+    background: var(--linear-colorido);
+    width: 100%;
+    height: 25%;
+    border-radius: 16px;
+    overflow: hidden ;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.barra-progresso::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: absolute;
+    left: 60%;
+  }
+  
+  .barra-progresso.p80::after {
+    left: 80%;
+  }
+  
+  .barra-progresso.p100::after {
+    left: 100%;
+  }
+ 
+  
