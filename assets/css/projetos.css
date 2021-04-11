@@ -1,0 +1,7 @@
+.ver-projeto{
+    display: flex;
+    justify-content: flex-end;
+}
+p.obs{
+   font-size: 8px  !important;
+}
