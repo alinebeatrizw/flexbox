@@ -5,22 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <title>Sobre Mim</title>
+    <title>Document</title>
 </head>
 <body>
     <main>
         <section class="todo">
             <div class="painel-menu">
                 <div class="eu">
-                    <a href="./index.html"><img src="./assets/imagens/aline.png" alt="Foto do Programador" ></a>
+                    <img src="./assets/imagens/aline.png" alt="Foto do Programador" class="imgUser">
                     <h3>Aline Wille</h3>
                     <p>Web Developer</p>
+                    <a id="aparece" class="botaoAparece" >
+                        <img src="./assets/imagens/alinhar-a-esquerda.png" alt="" > 
+                    </a>
+                    <a class="botaoEsconde" style="display: none;" id="esconde">
+                        <img src="./assets/imagens/alinhar-a-esquerda.png" alt="" >
+                    </a>
                 </div>
-                <div class="navegacao">
+                
+                <div class="navegacao " id="navegacao">
                     <div class="link">
                         <img src="./assets/imagens/casa.png" alt="">
                         <a href="./index.html"><h2>Início</h2></a>
@@ -42,7 +49,7 @@
                         <a href="https://github.com/alinebeatrizw" target="_blank"><h2>GitHub</h2></a>
                     </div>
                 </div>
-                <div class="pro-secao">
+                <div class="pro-secao" id="secaoPro">
                     <h2>Volte Sempre!</h2>
                     <img src="./assets/imagens/happy.png" alt="Imagem sorrindo">
                 </div>
@@ -94,5 +101,18 @@
     </main>
     <div class="circulo1"></div>
     <div class="circulo2"></div>
+    <script>
+        $(document).on('click', '#esconde', function(){ 
+        $('#navegacao, #secaoPro, .botaoEsconde').css("display", "none"); 
+        $('.botaoAparece').css("display", "block");     
+    });
+
+    $(document).on('click', '#aparece', function(){ 
+        $('#navegacao, #secaoPro, .botaoEsconde').css("display", "block"); 
+        $('.botaoAparece').css("display", "none");  
+        $('.pro-secao').css("display", "flex");     
+    });
+
+    </script>
 </body>
 </html>

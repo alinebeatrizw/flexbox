@@ -19,12 +19,12 @@
                     <img src="./assets/imagens/aline.png" alt="Foto do Programador" class="imgUser">
                     <h3>Aline Wille</h3>
                     <p>Web Developer</p>
-                    <button id="aparece" class="botaoAparece" >
+                    <a id="aparece" class="botaoAparece" >
                         <img src="./assets/imagens/alinhar-a-esquerda.png" alt="" > 
-                    </button>
-                    <button class="botaoEsconde" style="display: none;" id="esconde">
+                    </a>
+                    <a class="botaoEsconde" style="display: none;" id="esconde">
                         <img src="./assets/imagens/alinhar-a-esquerda.png" alt="" >
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="navegacao " id="navegacao">
@@ -133,7 +133,8 @@
 
     $(document).on('click', '#aparece', function(){ 
         $('#navegacao, #secaoPro, .botaoEsconde').css("display", "block"); 
-        $('.botaoAparece').css("display", "none");     
+        $('.botaoAparece').css("display", "none"); 
+        $('.pro-secao').css("display", "flex");       
     });
 
     </script>

@@ -40,8 +40,8 @@ h2, p{
 
 h3{
     color: var(--cor-texto-main);
-    font-weight: 400;
-    opacity: 0.8;
+    font-weight: 600;
+    opacity: 0.7
 }
 
 /**CIRCULOS**/
@@ -245,15 +245,76 @@ h3{
 
   /****resposividade****/
 
-
-  @media screen and (max-width: 1024px) {
-    .link{
+  @media screen and (max-width: 1440px) {
+    .botaoAparece, .botaoEsconde{
+        display: none;
+    }
+    .painel-menu{
+        flex:1;
         display: block;
+    }
+    .game{
+        flex: 3;
+    }
+    .link h2 {
+        padding: 0 1rem;
+    }
+    .todo{
+        width: 76%;
+    }
+    p.obs{
+        font-size: 8px  !important;
+    }
+    a.ver-projeto{
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .botaoAparece, .botaoEsconde{
+        display: none;
+    }
+    .painel-menu{
+        flex:2;
+        display: block;
+    }
+    .game{
+        flex: 3;
+    }
+    .link h2 {
+        padding: 0 1rem;
+    }
+    .todo{
+        width: 76%;
+    }
+    p.obs{
+        font-size: 8px  !important;
     }
   }
 
   @media screen and (max-width: 768px) {
     .painel-menu, .card{
+        display: block;
+    }
+    .botaoAparece, .botaoEsconde{
+        display: none;
+    }
+    .todo{
+        width: 90%;
+    }
+    .circulo1{
+        left: 56%;
+    }
+    .circulo2{
+        right: 56%;
+    }
+    .porcentagem{
+        display: none;
+    }
+    p.obs{
+        font-size: 8px  !important;
+    }
+    .link{
         display: block;
     }
   }
@@ -265,4 +326,37 @@ h3{
     .navegacao, .pro-secao{
         display: none;
     }
+    .status h1, .card{
+        text-align: center;
+    }
+    p.obs{
+        font-size: 8px  !important;
+    }
+    .pro-secao img{
+        width: 44px;
+    }
+    .pro-secao h2{
+        width: -1%  !important;
+    }
+    .todo{
+        width: 92%;
+    }
+    .circulo1, .circulo2{
+        display: none;
+    }
+    .botaoAparece, .botaoEsconde{
+        display: block;
+    }
+   
   }
+  @media screen and (max-width: 320px) {
+    .circulo1, .circulo2{
+        display: none;
+    }
+    .todo{
+        width: 92%;
+    }
+  }
+
+
+  
