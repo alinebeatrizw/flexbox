@@ -1,11 +1,10 @@
-$(document).redy(function(){
-    $('.hamburger').click(function(){
-        $(this).toggleClass('ativa')
-        $( '.navegacao').toggleClass('ativa')
-    })
-})
+$(document).on('click', '#esconde', function(){ 
+    $('#navegacao, #secaoPro, .botaoEsconde').css("display", "none"); 
+    $('.botaoAparece').css("display", "block");     
+});
 
-
-$("#hamburgere").click(function () {
-    $("#ex").hide();
+$(document).on('click', '#aparece', function(){ 
+    $('#navegacao, #secaoPro, .botaoEsconde').css("display", "block"); 
+    $('.botaoAparece').css("display", "none"); 
+    $('.pro-secao').css("display", "flex");       
 });
