@@ -2,6 +2,10 @@
     --linear-colorido: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
     --linear-cinza: linear-gradient( to right bottom,rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
     --cor-texto-main: #00142c;
+
+
+
+    --linear-bg-dark: linear-gradient(147deg, #000000 0%, #434343 74%);
 }
 
 *{
@@ -22,6 +26,17 @@ main{
     background: var(--linear-colorido);
 }
 
+/***tema****/
+
+.muda-tema img{
+    width: 50px;
+    cursor: pointer;
+}
+.muda-tema{
+    align-items: end;
+    position: absolute;
+    padding: 14px;
+}
 
 /**TEXTOS**/
 
@@ -295,6 +310,12 @@ h3{
     p.obs{
         font-size: 8px  !important;
     }
+    .pro-secao{
+        width: 35%;
+        position: absolute;
+        bottom: 7px;
+        
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -322,6 +343,7 @@ h3{
     .link{
         display: block;
     }
+   
   }
 
   @media screen and (max-width: 425px) {
@@ -351,6 +373,12 @@ h3{
     }
     .botaoAparece, .botaoEsconde{
         display: block;
+    }
+    .pro-secao{
+        
+        position: initial;
+       width: 100%;
+        
     }
    
   }
