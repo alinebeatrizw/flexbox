@@ -1,6 +1,6 @@
-# Portifólio
+# Página desenvolvida para fins de estudo FLEXBOX
 
-Este é um projeto desenvolvido como portifólio de estudos
+
 
 ## 🔧 Testes
 
