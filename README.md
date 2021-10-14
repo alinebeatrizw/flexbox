@@ -20,7 +20,7 @@
 
 ## 🚀 Resultados
 
-Você pode conferir os resultados clicando  [aqui](https://alinebeatrizw.github.io/minha-pagina/) !
+Você pode conferir os resultados clicando  [aqui](https://alinebeatrizw.github.io/flexbox/) !
 
 ---
 ⌨️ com ❤️ por [Aline Wille](https://github.com/alinebeatrizw) 😊
